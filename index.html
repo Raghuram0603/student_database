@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color:white ;
+            padding-left: 35%;
+            padding-right: 35%;
+            padding-top: 8%;
+        }
+        body .container{
+            display: flex;
+            justify-content:space-between;
+        }
+        body .para{
+            visibility: hidden;
+        }
+        th{
+            font-weight: bolder;
+            font-style: italic;
+            color:cornflowerblue;
+            padding-right: 20px;
+        }
+        td{
+            padding-right: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    Enter Name : <input type="text" id="name"><br><br>
+    Enter rollno : <input type="text" id="rollno"><br><br>
+    Enter year : <input type="text" id="year"><br><br>
+    Enter branch : <input type="text" id="branch"><br><br>
+    Enter mobile_no : <input type="text" id="mobile"><br><br><br><br>
+    <div class="container">
+        <input type="button" value="ADD" id="add">
+        <input type="button" value="UPDATE" id="update">
+        <input type="button" value="READ" id="read">
+        <input type="button" value="DELETE" id="delete">
+    </div>
+    <br><br><br>
+    <p class="para">
+        <table id="table1">
+        </table>
+    </p>
+    <script src="./script.js" type="module"></script>
+</body>
+</html>
